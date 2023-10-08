@@ -307,33 +307,33 @@ header {
 }
 
 .service-container .engineering {
-    background-image: url(/assets/images/plano2.jpg);
+    background-image: url(./../assets/images/plano2.jpg);
     background-position: -40px 140px;
 }
 
 
 .service-container .automation {
-    background-image: url(/assets/images/automatizacion.jpg);
+    background-image: url(./../assets/images/automatizacion.jpg);
     background-position: -200px 70px;
 }
 
 .service-container .ethernet {
-    background-image: url(/assets/images/ethernet.jpg);
+    background-image: url(./../assets/images/ethernet.jpg);
     background-position: -200px 120px;
 }
 
 .service-container .datacenter {
-    background-image: url(/assets/images/datacenter.jpg);
+    background-image: url(./../assets/images/datacenter.jpg);
     background-position: -140px 0px;
 }
 
 .service-container .hardware {
-    background-image: url(/assets/images/hardware2.jpg);
+    background-image: url(./../assets/images/hardware2.jpg);
     background-position: -180px 80px;
 }
 
 .service-container .software {
-    background-image: url(/assets/images/software2.jpg);
+    background-image: url(./../assets/images/software2.jpg);
     background-position: -210px 80px;
 }
 

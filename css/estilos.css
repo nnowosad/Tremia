@@ -214,7 +214,7 @@ header {
 }
 
     /*inicio banner*/
-.banner {
+/*.banner {
     width: 100%;
     height: 67.5vh;
     display: flex;
@@ -240,8 +240,33 @@ header {
     color: #fff;
     line-height: 4rem;
     padding: 0.3em;
+}*/
 
+.carousel {
+    height: 67.5vh;
 }
+
+.carousel-container {
+    height: 100%;
+}
+
+.carousel-item-container {
+    height: 100%;
+}
+
+.carousel-img {
+    height: 100%;
+}
+
+.carousel-button {
+    opacity: 1;
+}
+
+.carousel-button-icon {
+    width: 35px;
+    height: 35px;
+}
+
     /*fin banner*/
 
     /*inicio service*/
@@ -282,8 +307,8 @@ header {
 }
 
 .service-container .engineering {
-    background-image: url(/assets/images/plano.jpg);
-    background-position: -250px 20px;
+    background-image: url(/assets/images/plano2.jpg);
+    background-position: -40px 140px;
 }
 
 
@@ -303,13 +328,13 @@ header {
 }
 
 .service-container .hardware {
-    background-image: url(/assets/images/hardware.jpg);
-    background-position: -250px 0px;
+    background-image: url(/assets/images/hardware2.jpg);
+    background-position: -180px 80px;
 }
 
 .service-container .software {
-    background-image: url(/assets/images/software.jpg);
-    background-position: -300px 50px;
+    background-image: url(/assets/images/software2.jpg);
+    background-position: -210px 80px;
 }
 
 .service-container .background {
@@ -394,18 +419,35 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    
     background-color: #333333;
     border-radius: 20px;
 }
 
-
-.project .video-container article iframe {
+.project .video-container article .iframe-container {
+    position: relative;
     width: 100%;
-    height: 220px;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.project .video-container article .iframe-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+/*.project .video-container article iframe {
+    width: 100%;
+    height: 200px;
     border-radius: 8px;
     opacity: 1;
-}
+}*/
 
 .project .video-container article p {
     font-family: avenir;
@@ -634,7 +676,7 @@ header {
 }
 
 .engineering .service-card__image {
-    background-image: url(./../assets/images/plano.jpg);
+    background-image: url(./../assets/images/plano2.jpg);
 }
 
 .automation .service-card__image {
@@ -650,11 +692,11 @@ header {
 }
 
 .hardware .service-card__image {
-    background-image: url(./../assets/images/hardware.jpg);
+    background-image: url(./../assets/images/hardware2.jpg);
 }
 
 .software .service-card__image {
-    background-image: url(./../assets/images/software.jpg);
+    background-image: url(./../assets/images/software2.jpg);
 }
 
 
@@ -1038,6 +1080,13 @@ footer {
 
 /*Fin Footer*/
 
+@media (max-width: 767px) {
+
+    .nav {
+        display: none;
+    }
+}
+
 /*Inicio Media Query 768px*/
 
 @media (min-width: 768px) {
@@ -1096,12 +1145,37 @@ footer {
         grid-area: navbar;
     }
     
-    .navbar {
+    /*.navbar {
+        display: flex;
+        place-self: end center;
+        margin-bottom: 0;
+        padding: 0;
+    }*/
+
+    .nav-btsp {
         display: flex;
         place-self: end center;
         margin-bottom: 0;
         padding: 0;
     }
+
+    .nav-item-btsp {
+        width: 70px;
+        height: 30px;
+    }
+
+    .nav-link-btsp {
+        font-family: avenir;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #1e1e1e;
+    }
+    
+    .nav-link-btsp:hover {
+        color: #3c5784;
+        font-weight: 700;
+    }
+
     
     .mobile-navbar {
         display: none;
@@ -1114,7 +1188,8 @@ footer {
     }
 
     .service h2, .project h2, .location h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        margin-bottom: 0;
     }
 
     .project .video-container {
@@ -1220,6 +1295,10 @@ footer {
         font-size: 1.6rem;
     }
 
+    .service h2, .project h2, .location h2 {
+        font-size: 3rem;
+    }
+
     .about__card {
         gap: 10em;
     }
@@ -1260,3 +1339,5 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+

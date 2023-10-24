@@ -143,7 +143,7 @@ header {
         }
 
         .es {   
-                background-image: url(/assets/icons/bandera-españa.svg);
+                background-image: url(/assets/icons/flagespaña.svg);
 
                 @include tablet {
                     width: 25px;
@@ -152,7 +152,7 @@ header {
             }
         
         .en {
-                background-image: url(/assets/icons/bandera-reino-unido.svg);
+                background-image: url(/assets/icons/flaguk.svg);
 
                 @include tablet {
                     width: 25px;

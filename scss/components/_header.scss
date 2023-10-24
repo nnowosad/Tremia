@@ -140,24 +140,19 @@ header {
             background-position: center;
             background-repeat: no-repeat;
             box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+
+            @include tablet {
+                width: 25px;
+                height: 25px;
+                }
         }
 
         .es {   
-                background-image: url(/assets/icons/flagespaña.svg);
-
-                @include tablet {
-                    width: 25px;
-                    height: 25px;
-                }
+            background-image: url(/assets/icons/flagespaña.svg);
             }
         
         .en {
-                background-image: url(/assets/icons/flaguk.svg);
-
-                @include tablet {
-                    width: 25px;
-                    height: 25px;
-                }
+            background-image: url(/assets/icons/flaguk.svg);
             }
        
         .switch {

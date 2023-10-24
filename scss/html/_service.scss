@@ -1,0 +1,165 @@
+.service-main {
+    width: 100%;
+
+    .service-card {
+        width: 100%;
+        height: auto;
+        @include flex (column, none, none, 4em);
+        
+
+        @include desktop {
+            gap: 0em;
+        }
+
+        .service-card__article {
+            @include flex (column, none, none, 1.5em);
+            
+
+            @include desktop {
+                height: 380px;
+                flex-direction: row;
+            }
+
+            &:nth-child(even) {
+                @include desktop {
+                    flex-direction: row-reverse;
+                    animation-name: fadeinleft;
+                    animation-duration: 2s;
+                    animation-delay: 2s;
+                }
+
+                @keyframes fadeinleft {
+                    0% {
+                        display: none;
+                    }
+            
+                    from{transform: translateX(100%);}
+                }
+            }
+
+            &:nth-child(odd) {
+                @include desktop {
+                    animation-name: fadeinright;
+                    animation-duration: 2s;
+                    animation-delay: 2s;
+                }
+
+                @keyframes fadeinright {
+                    0% {
+                        display: none;
+                    }
+            
+                    from{transform: translateX(-100%);}
+                }
+            }
+
+            .service-card__image {
+                width: 100%;
+                height: 300px;
+                @include flex (row, start, center, 4em);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                @include desktop {
+                    height: 100%;
+                }
+
+                &.engineering {
+                    background-image: url(./../assets/images/plano2.jpg);
+                }
+
+                &.automation {
+                    background-image: url(./../assets/images/automatizacion.jpg);
+                }
+
+                &.ethernet {
+                    background-image: url(./../assets/images/ethernet.jpg);
+                }
+                
+                &.datacenter {
+                    background-image: url(./../assets/images/datacenter.jpg);
+                }
+                
+                &.hardware {
+                    background-image: url(./../assets/images/hardware2.jpg);
+                }
+                
+                &.software {
+                    background-image: url(./../assets/images/software2.jpg);
+                }
+
+                h2 {
+                    width: 100%;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: $font-size-s;
+                    letter-spacing: 0.15rem;
+                    padding: 0.3em;
+                    text-align: center;
+                    background-color: rgb(1, 1, 1, 0.5);
+                    color: #fff;
+
+                    @include tablet{
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+            
+            .service-card__body {
+                width: 100%;
+                @include flex (column, center, space-between, 2em);
+                padding: 1em 1em;
+
+                @include desktop {
+                    width: 45%;
+                    justify-content: center;
+                }
+
+                p {
+                    font-family: avenir;
+                    font-size: 1.3rem;
+                    letter-spacing: 0.15rem;
+                    line-height: 1.8rem;
+                    text-align: center;
+
+                    @include tablet {
+                        font-size: $font-size-s;
+                    }
+                }
+                
+                ul {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 4px;
+                    margin-bottom: 0;
+                    padding-left: 0;
+
+                    @include tablet {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+
+                    li {
+                        @include flex (row, center, center, 0px);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: avenir;
+                        font-size: $font-size-s;
+                        background-color: #b0b0b0;
+                        color: #ffffff;
+                        border-radius: 0.5em;
+                        padding: 0.55em;
+                        text-align: center;  
+                    }
+                }
+            }   
+        }
+    }
+}    
+    
+    
+    
+
+
+

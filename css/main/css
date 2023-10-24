@@ -309,47 +309,34 @@ header .toogle .switch:checked:before {
 }
 .home-main .service .service-container article {
   display: flex;
-  cursor: pointer;
   position: relative;
   width: 260px;
   height: 360px;
   border-radius: 16px;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: all 0.2s ease-in-out;
-  /*mask-image: linear-gradient(0deg, rgba(205,205,205,1) 20%, rgba(230,230,230,1) 45%, rgba(255,255,255,0.01) 100%);
-  -webkit-mask-image: linear-gradient(0deg, rgba(205,205,205,1) 20%, rgba(230,230,230,1) 45%, rgba(255,255,255,0.01) 100%);*/
 }
-.home-main .service .service-container article:hover {
-  transform: scale(1.05);
-  box-shadow: 8px 10px 20px -1px rgba(0, 0, 0, 0.6);
-}
-.home-main .service .service-container article:hover .icon img {
-  filter: invert(20%) sepia(96%) saturate(3536%) hue-rotate(229deg) brightness(200%) contrast(90%);
-  width: 85px;
-  height: 85px;
-}
-.home-main .service .service-container article:hover .icon h3 {
-  color: #ffffff;
-  font-size: 1.8rem;
+.home-main .service .service-container article .background {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-image: linear-gradient(180deg, #cdcdcd 20%, #e6e6e6 45%, rgba(255, 255, 255, 0) 100%);
 }
 .home-main .service .service-container article .icon {
   position: absolute;
-  top: 0px;
-  padding: 25px 15px 0px 15px;
+  top: 30px;
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
   gap: 16px;
-  border-radius: 16px;
-  background-image: linear-gradient(180deg, rgb(190, 190, 190) 20%, rgba(190, 190, 190, 0.85) 45%, rgba(190, 190, 190, 0.7) 55%, rgba(190, 190, 190, 0.6) 65%, rgba(190, 190, 190, 0.5) 75%, rgba(190, 190, 190, 0.4) 85%, rgba(190, 190, 190, 0.3) 90%, rgba(190, 190, 190, 0.25) 95%, rgba(190, 190, 190, 0.15) 100%);
+  border-radius: 8px;
 }
 .home-main .service .service-container article .icon img {
-  width: 75px;
-  height: 75px;
+  width: 80px;
+  height: 80px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -358,36 +345,35 @@ header .toogle .switch:checked:before {
 .home-main .service .service-container article .icon h3 {
   width: 80%;
   font-family: avenir;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
   color: #1e1e1e;
   text-align: center;
-  margin-bottom: 0px;
 }
 .home-main .service .service-container .engineering {
   background-image: url(./../assets/images/plano2.jpg);
-  background-position: -200px 50px;
+  background-position: -40px 140px;
 }
 .home-main .service .service-container .automation {
   background-image: url(./../assets/images/automatizacion.jpg);
-  background-position: center;
+  background-position: -200px 70px;
 }
 .home-main .service .service-container .ethernet {
   background-image: url(./../assets/images/ethernet.jpg);
-  background-position: -200px 75px;
+  background-position: -200px 120px;
 }
 .home-main .service .service-container .datacenter {
   background-image: url(./../assets/images/datacenter.jpg);
-  background-position: -150px;
+  background-position: -140px 0px;
 }
 .home-main .service .service-container .hardware {
   background-image: url(./../assets/images/hardware2.jpg);
-  background-position: -165px 50px;
+  background-position: -180px 80px;
 }
 .home-main .service .service-container .software {
   background-image: url(./../assets/images/software2.jpg);
-  background-position: -225px 60px;
+  background-position: -210px 80px;
 }
 .home-main .project {
   width: 90vw;
@@ -585,7 +571,6 @@ header .toogle .switch:checked:before {
 }
 .about-main .about .about__card .about-card__wrapper {
   width: 28em;
-  height: 53em;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -636,7 +621,7 @@ header .toogle .switch:checked:before {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 5%;
+  object-position: center;
   border-radius: 50%;
   border: 0.4em solid #019aa2;
 }
@@ -708,32 +693,6 @@ header .toogle .switch:checked:before {
 @media screen and (min-width: 1024px) {
   .service-main .service-card .service-card__article:nth-child(even) {
     flex-direction: row-reverse;
-    animation-name: fadeinleft;
-    animation-duration: 2s;
-    animation-delay: 2s;
-  }
-}
-@keyframes fadeinleft {
-  0% {
-    display: none;
-  }
-  from {
-    transform: translateX(100%);
-  }
-}
-@media screen and (min-width: 1024px) {
-  .service-main .service-card .service-card__article:nth-child(odd) {
-    animation-name: fadeinright;
-    animation-duration: 2s;
-    animation-delay: 2s;
-  }
-}
-@keyframes fadeinright {
-  0% {
-    display: none;
-  }
-  from {
-    transform: translateX(-100%);
   }
 }
 .service-main .service-card .service-card__article .service-card__image {
@@ -860,16 +819,13 @@ header .toogle .switch:checked:before {
   justify-content: center;
   gap: 6em;
 }
-.partner-main .partner-container p {
+.partner-main .partner-container .partner-container__intro {
   font-family: avenir;
   font-size: 1.5rem;
   line-height: 3rem;
   color: #3c5784;
   text-align: center;
   margin-bottom: 0px;
-  /*@include desktop {
-      font-size: 1.7rem;
-  }*/
 }
 .partner-main .partner-container .partner-card {
   width: 100%;
@@ -884,26 +840,21 @@ header .toogle .switch:checked:before {
   .partner-main .partner-container .partner-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    place-items: center;
   }
 }
 @media screen and (min-width: 1024px) {
   .partner-main .partner-container .partner-card {
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
   }
 }
 .partner-main .partner-container .partner-card .partner-card__item {
-  width: 70%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: none;
   justify-content: none;
   gap: 2em;
-}
-@media screen and (min-width: 1024px) {
-  .partner-main .partner-container .partner-card .partner-card__item {
-    width: 80%;
-  }
 }
 .partner-main .partner-container .partner-card .partner-card__item .partner-card__image {
   width: 100%;
@@ -915,7 +866,6 @@ header .toogle .switch:checked:before {
   font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 0px;
 }
 
 .form-container {
@@ -1254,4 +1204,4 @@ footer .copyright p {
 
 /*Fin Footer*/
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=css.map */

@@ -1,0 +1,183 @@
+/*Inicio Footer*/
+
+footer {
+    @include flex(column, center, center, 60px);
+    margin: 100px 0px;
+
+    @include tablet {
+        margin-bottom: 50px;    
+    }
+
+    .social-media-container {
+        max-width: 320px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        a, p {
+        font-family: avenir;
+        font-size: 1.4rem;
+        color: $primary-color;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 0px;
+
+        @include tablet {
+            font-size: 1.7rem;
+            }
+        }
+
+        .social-media-icons {
+            @include flex(row, center, space-between, 18px);
+            margin: 50px 0px;
+
+            a {
+                width: 25px;
+                height: 25px;
+                @include flex(row, center, center, 0px);
+                text-decoration: none;
+
+                @include tablet {
+                    width: 35px;
+                    height: 35px;
+                }
+
+                i { 
+                    @include flex(row, center, center, 0px);
+                    font-size: 1.3rem;
+                    color: $dark-color;
+                    border-radius: 50%;
+                    padding: 15px;
+                    box-shadow: 0px 5px 10px rgb(0,0,0,.35);
+                    transition: all .3s ease;
+
+                    @include tablet {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .fa-brands {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .fa-facebook:hover {
+                    background-color: $facebook-color;
+                    box-shadow: 0 0 15px $facebook-color,
+                                0 0 45px $facebook-color,
+                                0 0 75px $facebook-color,
+                                0 0 115px $facebook-color;
+                    color: $light-color;
+                    transform: scale(1.2);
+                
+                }
+                
+                .fa-twitter:hover {
+                    background-color: $twitter-color;
+                    box-shadow: 0 0 15px $twitter-color,
+                                0 0 45px $twitter-color,
+                                0 0 75px $twitter-color,
+                                0 0 115px $twitter-color;
+                    color: $light-color;
+                    transform: scale(1.2);
+                }
+                
+                .fa-instagram:hover {
+                    background: linear-gradient(45deg, nth($list: $instagram-color, $n:3) 0%, nth($list: $instagram-color, $n:5) 25%, nth($list: $instagram-color, $n:1) 50%, nth($list: $instagram-color, $n:4) 75%, nth($list: $instagram-color, $n:2) 100%);
+                    box-shadow: 0px 0 15px rgba(254, 218, 117, 0.8),
+                                0px 0 45px rgba(250,126,30,0.8),
+                                0px 0 75px rgba(214,41,118,0.8),
+                                0px 0 115px rgba(150,47,191,0.8);
+                    color: $light-color;
+                    transform: scale(1.2);
+                }
+                
+                .fa-linkedin:hover {
+                    background-color: $linkedin-color;
+                    box-shadow: 0 0 15px $linkedin-color,
+                                0 0 45px $linkedin-color,
+                                0 0 75px $linkedin-color,
+                                0 0 115px $linkedin-color;
+                    color: $light-color;
+                    transform: scale(1.2);
+                }
+                
+                .fa-youtube:hover {
+                    background-color: $youtube-color;
+                    box-shadow: 0 0 15px $youtube-color,
+                                0 0 45px $youtube-color,
+                                0 0 75px $youtube-color,
+                                0 0 115px $youtube-color;
+                    color: $light-color;
+                    transform: scale(1.2);
+                }            
+            }
+        }
+        
+        .whatsapp-icon {
+            @include flex(column, center, center, 10px);
+
+            a {
+                width: 25px;
+                height: 25px;
+                @include flex(row, center, center, 0px);
+                text-decoration: none;
+
+                @include tablet {
+                    width: 35px;
+                    height: 35px;
+                }
+
+                i {
+                    @include flex(row, center, center, 0px);
+                    font-size: 1.3rem;
+                    color: $dark-color;
+                    border-radius: 50%;
+                    padding: 15px;
+                    box-shadow: 0px 5px 10px rgb(0,0,0,.35);
+                    transition: all .3s ease;
+                    color: $light-color;
+                    background-color: #25D366;
+
+                    @include tablet {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .fa-brands {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .fa-whatsapp:hover {
+                    background-color: #25D366;
+                    box-shadow: 0 0 15px #25D366,
+                                0 0 45px #25D366,
+                                0 0 75px #25D366,
+                                0 0 115px #25D366;
+                    color: $light-color;
+                    transform: scale(1.2);
+                }
+            }            
+        }
+    }
+
+    .copyright {
+        font-family: avenir;
+        font-size: 1.2rem;
+        color: $dark-color;
+        font-weight: bold;
+        padding: 0.5em 0em;
+        
+        @include tablet {
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/*Fin Footer*/

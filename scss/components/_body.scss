@@ -1,0 +1,9 @@
+@font-face {
+    font-family: avenir;
+    src: url(../assets/fonts/avenir_ff/AvenirLTStd-Book.otf);
+}
+
+body {
+    @include flex(column, normal, flex-start, 40px);
+    background-color: $main-background-color;
+}

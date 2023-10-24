@@ -1,7 +1,8 @@
-@font-face {
+/*@font-face {
     font-family: avenir;
     src: url(../assets/fonts/avenir_ff/AvenirLTStd-Book.otf);
 }
+
 
 * {
     box-sizing: border-box;
@@ -24,7 +25,7 @@ body {
 
 /*Comienzo Header*/
 
-header {
+/*header {
     width: 90vw;
     height: 30vh;
     margin: 0 auto;
@@ -52,7 +53,7 @@ header {
     /* inicio navbar*/
 
 
-.navbar {
+/*.navbar {
     display: none;
 }
 
@@ -123,13 +124,13 @@ header {
 
 .mobile-navbar li a:hover {
     color: #b0b0b0;
-}
+}*/
 
     /* fin navbar*/
 
     /* inicio switch idioma*/
 
-.toogle {
+/*.toogle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,8 +140,6 @@ header {
 }
 
 .toogle .es, .toogle .en{
-    /*width: 35px;
-    height: 35px;*/
     width: 17.5px;
     height: 17.5px;
     border-radius: 100%;
@@ -161,8 +160,6 @@ header {
 
 .toogle .switch {
     position: relative;
-    /*width: 50px;
-    height: 25px;*/
     width: 25px;
     height: 12.5px;
 }
@@ -170,8 +167,6 @@ header {
 .switch:before {
     content: '';
     position: absolute;
-    /*width: 50px;
-    height: 25px;*/
     width: 25px;
     height: 12.5px;
     background-color: #b0b0b0;
@@ -181,8 +176,6 @@ header {
 .switch:after {
     content: '';
     position: absolute;
-    /*width: 25px;
-    height: 25px;*/
     width: 12.5px;
     height: 12.5px;
     background-color: #fff;
@@ -193,25 +186,24 @@ header {
 }
 
 .switch:checked:after {
-    /*left: 25px;*/
     left: 12.5px;
     border: 2px solid #b0b0b0;
 }
 
 .switch:checked:before {
     background-color: #b0b0b0;
-}
+}*/
     /*fin switch idioma*/
 
 /*Fin Header*/
 
 /*Inicio Main Index*/
 
-.home-main {
+/*.home-main {
     display: flex;
     flex-direction: column;
     gap: 150px;
-}
+}*/
 
     /*inicio banner*/
 /*.banner {
@@ -242,7 +234,7 @@ header {
     padding: 0.3em;
 }*/
 
-.carousel {
+/*.carousel {
     height: 67.5vh;
 }
 
@@ -265,13 +257,13 @@ header {
 .carousel-button-icon {
     width: 35px;
     height: 35px;
-}
+}*/
 
     /*fin banner*/
 
     /*inicio service*/
 
-.service {
+/*.service {
     width: 90vw;
     display: grid;
     margin: 0 auto;
@@ -375,13 +367,13 @@ header {
     letter-spacing: 0.2rem;
     color: #1e1e1e;
     text-align: center;
-}
+}*/
 
     /*fin service*/
 
     /*inico project*/
 
-.project {
+/*.project {
     width: 90vw;
     margin: 0 auto;
     display: flex;
@@ -407,8 +399,6 @@ header {
     align-items: center;
     flex-wrap: wrap;
     gap: 70px;
-    /*background-color: #e6e6e6;*/
-    /*padding: 10px 10px;*/
     border-radius: 7px;
 }
 
@@ -428,7 +418,7 @@ header {
     width: 100%;
     overflow: hidden;
     padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
+/*
 
 .project .video-container article .iframe-container iframe {
     position: absolute;
@@ -442,13 +432,6 @@ header {
 }
 
 
-/*.project .video-container article iframe {
-    width: 100%;
-    height: 200px;
-    border-radius: 8px;
-    opacity: 1;
-}*/
-
 .project .video-container article p {
     font-family: avenir;
     font-size: 1.5rem;
@@ -457,13 +440,13 @@ header {
     color: #fff;
     text-align: justify;
     opacity: 0.8;
-}
+}*/
 
     /*fin project*/
 
     /*inicio location*/
 
-.location {
+/*.location {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -483,7 +466,7 @@ header {
 
 .location iframe {
     width: 100%;
-}
+}*/
 
     /*fin location*/
 
@@ -491,7 +474,7 @@ header {
 
 /*Inicio Main Nosotros*/
 
-.about-main {
+/*.about-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -632,14 +615,14 @@ header {
 .about-card__head .about-card__overlay::after {
     border-radius: 0 2.5em 0 0;
     background-color: #fff;
-}
+}*/
 
 
 /*FIn Main Nosotros*/
 
 /*Inicio Main Servicios*/
 
-.service-card {
+/*.service-card {
     width: 100vw;
     height: auto;
     display: flex;
@@ -739,13 +722,13 @@ header {
     border-radius: 0.5em;
     padding: 0.55em;
     text-align: center;  
-}
+}*/
 
 /*Fin Main Servicios*/
 
 /*Inicio Main Asociados*/
 
-.partner-main {
+/*.partner-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -797,13 +780,13 @@ header {
     font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
-}
+}*/
 
 /*Fin Main Asociados*/
 
 /*Inicio Main Contacto*/
 
-.form-container {
+/*.form-container {
     width: 90vw;
     display: flex;
     flex-direction: column;
@@ -926,13 +909,13 @@ header {
     color: #ffffff;
     line-height: 2.5rem;
     text-align: left;
-}
+}*/
 
 /*FIn Main Contacto*/
 
 /*Inicio Footer*/
 
-footer {
+/*footer {
     display: flex;
     margin: 100px 0px;
     flex-direction: column;
@@ -1076,7 +1059,7 @@ footer {
     color: #1e1e1e;
     font-weight: bold;
     padding: 0.5em 0em;
-}
+}*/
 
 /*Fin Footer*/
 
@@ -1144,13 +1127,6 @@ footer {
         display: grid;
         grid-area: navbar;
     }
-    
-    /*.navbar {
-        display: flex;
-        place-self: end center;
-        margin-bottom: 0;
-        padding: 0;
-    }*/
 
     .nav-btsp {
         display: flex;
@@ -1181,11 +1157,7 @@ footer {
         display: none;
     }
 
-    .banner p {
-        width: 300px;
-        font-size: 2.8rem;
-        line-height: 5rem;
-    }
+    
 
     .service h2, .project h2, .location h2 {
         font-size: 2.5rem;
@@ -1284,16 +1256,14 @@ footer {
     .copyright {
         font-size: 1.3rem;
     }
-}   
+}
+  
 
 @media (min-width: 1024px) {
     .logo img {
         width: 100%;
     }
 
-    .navbar li a {
-        font-size: 1.6rem;
-    }
 
     .service h2, .project h2, .location h2 {
         font-size: 3rem;
@@ -1339,5 +1309,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+    
+
 
 

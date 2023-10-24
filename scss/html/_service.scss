@@ -13,9 +13,9 @@
 
         .service-card__article {
             @include flex (column, none, none, 1.5em);
-            
 
             @include desktop {
+                
                 height: 380px;
                 flex-direction: row;
             }
@@ -24,32 +24,36 @@
                 @include desktop {
                     flex-direction: row-reverse;
                     animation-name: fadeinleft;
-                    animation-duration: 2s;
-                    animation-delay: 2s;
+                    animation-duration: 3s;
+                    animation-delay: 0s;
                 }
 
                 @keyframes fadeinleft {
-                    0% {
-                        display: none;
+                    from {
+                        opacity: 0; 
+                        transform: translateX(100%);
                     }
-            
-                    from{transform: translateX(100%);}
+                    to {
+                        opacity: 1;
+                    }
                 }
             }
 
             &:nth-child(odd) {
                 @include desktop {
                     animation-name: fadeinright;
-                    animation-duration: 2s;
-                    animation-delay: 2s;
+                    animation-duration: 3s;
+                    animation-delay: 0s;
                 }
 
                 @keyframes fadeinright {
-                    0% {
-                        display: none;
+                    from {
+                        opacity: 0; 
+                        transform: translateX(-100%);
                     }
-            
-                    from{transform: translateX(-100%);}
+                    to {
+                        opacity: 1;
+                    }
                 }
             }
 

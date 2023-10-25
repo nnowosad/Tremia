@@ -13,7 +13,7 @@ html {
 
 @font-face {
   font-family: avenir;
-  src: url(../assets/fonts/avenir_ff/AvenirLTStd-Book.otf);
+  src: url(./../assets/fonts/avenir_ff/AvenirLTStd-Book.otf);
 }
 body {
   display: flex;
@@ -173,10 +173,10 @@ header .toogle i {
   }
 }
 header .toogle .es {
-  background-image: url(/assets/icons/flagespaña.svg);
+  background-image: url(./../assets/icons/flagespaña.svg);
 }
 header .toogle .en {
-  background-image: url(/assets/icons/flaguk.svg);
+  background-image: url(./../assets/icons/flaguk.svg);
 }
 header .toogle .switch {
   position: relative;

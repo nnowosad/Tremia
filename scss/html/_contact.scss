@@ -1,3 +1,4 @@
+/*Inicio Formulario*/
 .form-container {
     width: 90vw;
     @include flex (column, center, none, 0px);
@@ -114,13 +115,17 @@
                     border-bottom: 1px solid $primary-color;
                     color: $light-color;
                     font-family: avenir;
-                    font-size: 1.2rem;
+                    font-size: 1.4rem;
                     letter-spacing: 0.1rem;
                 }
 
-                option {
-                    color: #222222;
+                select {
+                    option {
+                        color: #222222;
+                        font-size: $font-size-s;
+                    }
                 }
+                
             }   
         }
         

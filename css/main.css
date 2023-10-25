@@ -11,6 +11,17 @@ html {
   font-size: 62.5%;
 }
 
+.home-main .location h2, .home-main .project h2, .home-main .service h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  color: #3c5784;
+  text-align: center;
+  padding: 0.25em;
+  margin-bottom: 0px;
+}
+
 @font-face {
   font-family: avenir;
   src: url(./../assets/fonts/avenir_ff/AvenirLTStd-Book.otf);
@@ -24,7 +35,7 @@ body {
   background-color: #f5f5f5;
 }
 
-/*Comienzo Header*/
+/*Inicio Header*/
 header {
   width: 90vw;
   height: 30vh;
@@ -33,6 +44,8 @@ header {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 2fr 4fr;
   grid-template-areas: ". ." ". toogle" "logo logo";
+  /*Inicio Nav*/
+  /*Inicio Toogle*/
 }
 @media screen and (min-width: 768px) {
   header {
@@ -235,7 +248,6 @@ header .toogle .switch:checked:before {
   background-color: #b0b0b0;
 }
 
-/*Fin Header*/
 .home-main {
   display: flex;
   flex-direction: column;
@@ -274,19 +286,9 @@ header .toogle .switch:checked:before {
   margin: 0 auto;
   gap: 50px;
 }
-.home-main .service h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 0.3rem;
-  color: #3c5784;
-  text-align: center;
-  padding: 0.25em;
-}
 @media screen and (min-width: 768px) {
   .home-main .service h2 {
     font-size: 2.5rem;
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -319,12 +321,12 @@ header .toogle .switch:checked:before {
   box-shadow: 8px 10px 20px -1px rgba(0, 0, 0, 0.6);
 }
 .home-main .service .service-container article:hover .icon img {
-  filter: invert(20%) sepia(96%) saturate(3536%) hue-rotate(229deg) brightness(200%) contrast(90%);
+  filter: invert(99%) sepia(69%) saturate(1529%) hue-rotate(330deg) brightness(250%) contrast(89%);
   width: 85px;
   height: 85px;
 }
 .home-main .service .service-container article:hover .icon h3 {
-  color: #ffffff;
+  color: #3c5784;
   font-size: 1.8rem;
 }
 .home-main .service .service-container article .icon {
@@ -392,19 +394,9 @@ header .toogle .switch:checked:before {
   justify-content: none;
   gap: 50px;
 }
-.home-main .project h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 0.3rem;
-  color: #3c5784;
-  text-align: center;
-  padding: 0.25em;
-}
 @media screen and (min-width: 768px) {
   .home-main .project h2 {
     font-size: 2.5rem;
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -433,7 +425,7 @@ header .toogle .switch:checked:before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 10px;
   background-color: #1e1e1e;
   border-radius: 20px;
@@ -507,18 +499,9 @@ header .toogle .switch:checked:before {
   justify-content: center;
   gap: 50px;
 }
-.home-main .location h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 0.3rem;
-  color: #3c5784;
-  padding: 0.25em;
-}
 @media screen and (min-width: 768px) {
   .home-main .location h2 {
     font-size: 2.5rem;
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -530,6 +513,7 @@ header .toogle .switch:checked:before {
   width: 100%;
 }
 
+/*Inicio Main Nosotros*/
 .about-main {
   display: flex;
   flex-direction: column;
@@ -545,6 +529,7 @@ header .toogle .switch:checked:before {
   align-items: center;
   justify-content: center;
   gap: 3em;
+  /*Inicio Cards de Contacto*/
 }
 .about-main .about h2 {
   font-family: avenir;
@@ -669,6 +654,7 @@ header .toogle .switch:checked:before {
   border-top: 0.2em solid #c7c7c7;
 }
 
+/*Inicio Main Servicios*/
 .service-main {
   width: 100%;
 }
@@ -680,6 +666,7 @@ header .toogle .switch:checked:before {
   align-items: none;
   justify-content: none;
   gap: 4em;
+  /*Inicio Artículo por Servicio*/
 }
 @media screen and (min-width: 1024px) {
   .service-main .service-card {
@@ -840,6 +827,7 @@ header .toogle .switch:checked:before {
   text-align: center;
 }
 
+/*Inicio Main Asociados*/
 .partner-main {
   display: flex;
   flex-direction: column;
@@ -855,6 +843,7 @@ header .toogle .switch:checked:before {
   align-items: center;
   justify-content: center;
   gap: 6em;
+  /*Inicio Card Asociado*/
 }
 .partner-main .partner-container p {
   font-family: avenir;
@@ -914,6 +903,7 @@ header .toogle .switch:checked:before {
   margin-bottom: 0px;
 }
 
+/*Inicio Formulario*/
 .form-container {
   width: 90vw;
   display: flex;
@@ -1029,11 +1019,12 @@ header .toogle .switch:checked:before {
   border-bottom: 1px solid #3c5784;
   color: #ffffff;
   font-family: avenir;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: 0.1rem;
 }
-.form-container .form-container__wrapper .contact-form .contact-form__form option {
+.form-container .form-container__wrapper .contact-form .contact-form__form select option {
   color: #222222;
+  font-size: 1.5rem;
 }
 .form-container .form-container__wrapper .contact-info {
   width: 100%;

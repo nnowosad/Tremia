@@ -1,6 +1,4 @@
-
-/*Comienzo Header*/
-
+/*Inicio Header*/
 header {
     width: 90vw;
     height: 30vh;
@@ -44,7 +42,8 @@ header {
             }
         }
     }
-            
+
+    /*Inicio Nav*/        
     nav {
         
         @include tablet {
@@ -120,7 +119,7 @@ header {
         }
     
         
-    
+    /*Inicio Toogle*/
     .toogle {
         @include flex(row, center, center, 2.5px);
         grid-area: toogle;
@@ -213,5 +212,3 @@ header {
         }  
     }
 }
-
-/*Fin Header*/

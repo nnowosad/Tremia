@@ -132,6 +132,11 @@
                         font-size: $font-size-s;
                     }
                 }
+
+                span {
+                    color: #0b5ed7;
+                    font-weight: bolder;
+                }
                 
                 ul {
                     width: 100%;
@@ -145,6 +150,16 @@
                         grid-template-columns: repeat(3, 1fr);
                     }
 
+                    @include desktop {
+                        &:hover > *{
+                            opacity: 0.4;
+                        }
+
+                        &:hover > *:hover{
+                            opacity: 1;
+                        }
+                    }
+
                     li {
                         @include flex (row, center, center, 0px);
                         display: flex;
@@ -156,7 +171,17 @@
                         color: #ffffff;
                         border-radius: 0.5em;
                         padding: 0.55em;
-                        text-align: center;  
+                        text-align: center;
+                        cursor: pointer;
+                        
+                        
+                        @include desktop {
+                            &:hover {
+                                color:$primary-color;
+                                background-color: #BEBEBE;
+                                font-weight: bold;
+                            }
+                        }
                     }
                 }
             }   

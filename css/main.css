@@ -186,7 +186,7 @@ header .toogle i {
   }
 }
 header .toogle .es {
-  background-image: url(./../assets/icons/flagespaña.svg);
+  background-image: url(./../assets/icons/flagespania.svg);
 }
 header .toogle .en {
   background-image: url(./../assets/icons/flaguk.svg);
@@ -254,6 +254,10 @@ header .toogle .switch:checked:before {
   align-items: none;
   justify-content: none;
   gap: 150px;
+  /*Inicio Carousel*/
+  /*Inicio Section Services*/
+  /*Inicio Section Project*/
+  /*Inicio Section Location*/
 }
 .home-main .carousel {
   height: 67.5vh;
@@ -313,21 +317,21 @@ header .toogle .switch:checked:before {
   background-size: cover;
   background-repeat: no-repeat;
   transition: all 0.2s ease-in-out;
-  /*mask-image: linear-gradient(0deg, rgba(205,205,205,1) 20%, rgba(230,230,230,1) 45%, rgba(255,255,255,0.01) 100%);
-  -webkit-mask-image: linear-gradient(0deg, rgba(205,205,205,1) 20%, rgba(230,230,230,1) 45%, rgba(255,255,255,0.01) 100%);*/
 }
-.home-main .service .service-container article:hover {
-  transform: scale(1.05);
-  box-shadow: 8px 10px 20px -1px rgba(0, 0, 0, 0.6);
-}
-.home-main .service .service-container article:hover .icon img {
-  filter: invert(99%) sepia(69%) saturate(1529%) hue-rotate(330deg) brightness(250%) contrast(89%);
-  width: 85px;
-  height: 85px;
-}
-.home-main .service .service-container article:hover .icon h3 {
-  color: #3c5784;
-  font-size: 1.8rem;
+@media screen and (min-width: 1024px) {
+  .home-main .service .service-container article:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 10px 20px -1px rgba(0, 0, 0, 0.6);
+  }
+  .home-main .service .service-container article:hover .icon img {
+    filter: invert(99%) sepia(69%) saturate(1529%) hue-rotate(330deg) brightness(250%) contrast(89%);
+    width: 85px;
+    height: 85px;
+  }
+  .home-main .service .service-container article:hover .icon h3 {
+    color: #3c5784;
+    font-size: 1.8rem;
+  }
 }
 .home-main .service .service-container article .icon {
   position: absolute;
@@ -797,6 +801,10 @@ header .toogle .switch:checked:before {
     font-size: 1.5rem;
   }
 }
+.service-main .service-card .service-card__article .service-card__body span {
+  color: #0b5ed7;
+  font-weight: bolder;
+}
 .service-main .service-card .service-card__article .service-card__body ul {
   width: 100%;
   display: grid;
@@ -808,6 +816,14 @@ header .toogle .switch:checked:before {
 @media screen and (min-width: 768px) {
   .service-main .service-card .service-card__article .service-card__body ul {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .service-main .service-card .service-card__article .service-card__body ul:hover > * {
+    opacity: 0.4;
+  }
+  .service-main .service-card .service-card__article .service-card__body ul:hover > *:hover {
+    opacity: 1;
   }
 }
 .service-main .service-card .service-card__article .service-card__body ul li {
@@ -826,6 +842,14 @@ header .toogle .switch:checked:before {
   border-radius: 0.5em;
   padding: 0.55em;
   text-align: center;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .service-main .service-card .service-card__article .service-card__body ul li:hover {
+    color: #3c5784;
+    background-color: #BEBEBE;
+    font-weight: bold;
+  }
 }
 
 /*Inicio Main Asociados*/
@@ -1141,35 +1165,37 @@ footer .social-media-container .social-media-icons a .fa-brands {
   width: 100%;
   height: 100%;
 }
-footer .social-media-container .social-media-icons a .fa-facebook:hover {
-  background-color: #3b5998;
-  box-shadow: 0 0 15px #3b5998, 0 0 45px #3b5998, 0 0 75px #3b5998, 0 0 115px #3b5998;
-  color: #ffffff;
-  transform: scale(1.2);
-}
-footer .social-media-container .social-media-icons a .fa-twitter:hover {
-  background-color: #00acee;
-  box-shadow: 0 0 15px #00acee, 0 0 45px #00acee, 0 0 75px #00acee, 0 0 115px #00acee;
-  color: #ffffff;
-  transform: scale(1.2);
-}
-footer .social-media-container .social-media-icons a .fa-instagram:hover {
-  background: linear-gradient(45deg, rgba(254, 218, 117, 0.8) 0%, rgba(250, 126, 30, 0.8) 25%, rgba(214, 41, 118, 0.8) 50%, rgba(150, 47, 191, 0.8) 75%, rgba(79, 91, 213, 0.8) 100%);
-  box-shadow: 0px 0 15px rgba(254, 218, 117, 0.8), 0px 0 45px rgba(250, 126, 30, 0.8), 0px 0 75px rgba(214, 41, 118, 0.8), 0px 0 115px rgba(150, 47, 191, 0.8);
-  color: #ffffff;
-  transform: scale(1.2);
-}
-footer .social-media-container .social-media-icons a .fa-linkedin:hover {
-  background-color: #0e76a8;
-  box-shadow: 0 0 15px #0e76a8, 0 0 45px #0e76a8, 0 0 75px #0e76a8, 0 0 115px #0e76a8;
-  color: #ffffff;
-  transform: scale(1.2);
-}
-footer .social-media-container .social-media-icons a .fa-youtube:hover {
-  background-color: #c4302b;
-  box-shadow: 0 0 15px #c4302b, 0 0 45px #c4302b, 0 0 75px #c4302b, 0 0 115px #c4302b;
-  color: #ffffff;
-  transform: scale(1.2);
+@media screen and (min-width: 1024px) {
+  footer .social-media-container .social-media-icons a .fa-facebook:hover {
+    background-color: #3b5998;
+    box-shadow: 0 0 15px #3b5998, 0 0 45px #3b5998, 0 0 75px #3b5998, 0 0 115px #3b5998;
+    color: #ffffff;
+    transform: scale(1.2);
+  }
+  footer .social-media-container .social-media-icons a .fa-twitter:hover {
+    background-color: #00acee;
+    box-shadow: 0 0 15px #00acee, 0 0 45px #00acee, 0 0 75px #00acee, 0 0 115px #00acee;
+    color: #ffffff;
+    transform: scale(1.2);
+  }
+  footer .social-media-container .social-media-icons a .fa-instagram:hover {
+    background: linear-gradient(45deg, rgba(254, 218, 117, 0.8) 0%, rgba(250, 126, 30, 0.8) 25%, rgba(214, 41, 118, 0.8) 50%, rgba(150, 47, 191, 0.8) 75%, rgba(79, 91, 213, 0.8) 100%);
+    box-shadow: 0px 0 15px rgba(254, 218, 117, 0.8), 0px 0 45px rgba(250, 126, 30, 0.8), 0px 0 75px rgba(214, 41, 118, 0.8), 0px 0 115px rgba(150, 47, 191, 0.8);
+    color: #ffffff;
+    transform: scale(1.2);
+  }
+  footer .social-media-container .social-media-icons a .fa-linkedin:hover {
+    background-color: #0e76a8;
+    box-shadow: 0 0 15px #0e76a8, 0 0 45px #0e76a8, 0 0 75px #0e76a8, 0 0 115px #0e76a8;
+    color: #ffffff;
+    transform: scale(1.2);
+  }
+  footer .social-media-container .social-media-icons a .fa-youtube:hover {
+    background-color: #c4302b;
+    box-shadow: 0 0 15px #c4302b, 0 0 45px #c4302b, 0 0 75px #c4302b, 0 0 115px #c4302b;
+    color: #ffffff;
+    transform: scale(1.2);
+  }
 }
 footer .social-media-container .whatsapp-icon {
   display: flex;
@@ -1218,11 +1244,13 @@ footer .social-media-container .whatsapp-icon a .fa-brands {
   width: 100%;
   height: 100%;
 }
-footer .social-media-container .whatsapp-icon a .fa-whatsapp:hover {
-  background-color: #25D366;
-  box-shadow: 0 0 15px #25D366, 0 0 45px #25D366, 0 0 75px #25D366, 0 0 115px #25D366;
-  color: #ffffff;
-  transform: scale(1.2);
+@media screen and (min-width: 1024px) {
+  footer .social-media-container .whatsapp-icon a .fa-whatsapp:hover {
+    background-color: #25D366;
+    box-shadow: 0 0 15px #25D366, 0 0 45px #25D366, 0 0 75px #25D366, 0 0 115px #25D366;
+    color: #ffffff;
+    transform: scale(1.2);
+  }
 }
 footer .copyright {
   font-family: avenir;

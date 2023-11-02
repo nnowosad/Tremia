@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +15,9 @@
     <meta name="keywords" content="ingeniería, automatización, industrial, electrónica, redes ethernet, hardware, software, datacenter">
 </head>
 <body>
-    <!--Inicio Header-->
     <header>
         <h1>Tremia</h1>
         <a href="./index.html" class="logo"><img src="./assets/images/logo.svg" alt="Logotipo de la compañia"></a>
-        <!--Inicio Nav-->
         <nav>
             <ul class="nav nav-underline nav-btsp">
                 <li class="nav-item nav-item-btsp">
@@ -46,15 +44,15 @@
                 <li><a href="./html/contacto.html"><i class="fa-solid fa-circle-info"></i></a></li>
             </ul>
         </nav>
-        <!--Inicio Toggle-->
+        <!--Inicio Toggle, switch de idioma a la espera de Javascript-->
         <div class="toogle">
             <i class="es"></i>
             <input type="checkbox" class="switch">
             <i class="en"></i>
         </div>
     </header>
-    <!--Inicio Home-Main-->
     <main class="home-main">
+        <!--Inicio Carousel: tengo la duda de aplicarlo solo a Desktop o si también queda bien para mobile-->
         <div id="carouselExampleInterval" class="carousel slide carousel" data-bs-ride="carousel">
             <div class="carousel-inner carousel-container">
               <div class="carousel-item carousel-item-container active" data-bs-interval="10000">
@@ -76,55 +74,61 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <!--Inicio Service-->
+          <!--Inicio Service: cards de los servicios ofrecidos-->
         <section class="service">
             <h2>SERVICIOS BRINDADOS</h2>
             <section class="service-container">
-                <article class="engineering">
-                    <div class="background"></div>
-                    <div class="icon">
-                        <img src="./assets/icons/ingenieria.png" alt="Plano de ingeniería">
-                        <h3>Desarrollo de Ingeniería</h3>
-                    </div>
-                </article>
-                <article class="automation">
-                    <div class="background"></div>
-                    <div class="icon">
-                        <img src="./assets/icons/automatizacion.png" alt="Máquina de producción automatizada">
-                        <h3>Automatización Industrial</h3>
-                    </div>
-                </article>
-                <article class="ethernet">
-                    <div class="background"></div>
-                    <div class="icon">
-                        <img src="./assets/icons/ethernet.png" alt="Enchufe y cable ethernet">
-                        <h3>Redes Ethernet</h3>
-                    </div>
-                </article>
-                <article class="datacenter">
-                    <div class="background"></div>
-                    <div class="icon">
-                        <img src="./assets/icons/datacenter.png" alt="Datacenter conectado a la nube">
-                        <h3>Datacenters Industriales</h3>
-                    </div>
-                </article>
-                <article class="hardware">
-                    <div class="background"></div>
-                    <div class="icon">
-                        <img src="./assets/icons/hardware.png" alt="Placa mother">
-                        <h3>Hardware</h3>
-                    </div>
-                </article>
-                <article class="software">
-                    <div class="background"></div>
-                    <div class="icon">
-                        <img src="./assets/icons/software.png" alt="Monitor de pc">
-                        <h3>Software</h3>
-                    </div>
-                </article>
+                <a href="./html/servicios.html#ingenieria">
+                    <article class="engineering">
+                        <div class="icon">
+                            <img src="./assets/icons/ingenieria.png" alt="Plano de ingeniería">
+                            <h3>Desarrollo de Ingeniería</h3>
+                        </div>
+                    </article>
+                </a>
+                <a href="./html/servicios.html#automatizacion">
+                    <article class="automation">
+                        <div class="icon">
+                            <img src="./assets/icons/automatizacion.png" alt="Máquina de producción automatizada">
+                            <h3>Automatización Industrial</h3>
+                        </div>
+                    </article>
+                </a>
+                <a href="./html/servicios.html#red">
+                    <article class="ethernet">
+                        <div class="icon">
+                            <img src="./assets/icons/ethernet.png" alt="Enchufe y cable ethernet">
+                            <h3>Redes Ethernet</h3>
+                        </div>
+                    </article>
+                </a>
+                <a href="./html/servicios.html#data">
+                    <article class="datacenter">
+                        <div class="icon">
+                            <img src="./assets/icons/datacenter.png" alt="Datacenter conectado a la nube">
+                            <h3>Datacenters Industriales</h3>
+                        </div>
+                    </article>
+                </a>
+                <a href="./html/servicios.html#hard">
+                    <article class="hardware">
+                        <div class="icon">
+                            <img src="./assets/icons/hardware.png" alt="Placa mother">
+                            <h3>Hardware</h3>
+                        </div>
+                    </article>
+                </a>
+                <a href="./html/servicios.html#soft">
+                    <article class="software">
+                        <div class="icon">
+                            <img src="./assets/icons/software.png" alt="Monitor de pc">
+                            <h3>Software</h3>
+                        </div>
+                    </article>
+                </a>
             </section>
         </section>
-        <!--Inicio Project-->
+        <!--Inicio Project: incluye videos con descripcion referida a la actividad-->
         <section class="project">
             <h2>PROYECTOS REALIZADOS</h2>
             <section class="video-container"> 

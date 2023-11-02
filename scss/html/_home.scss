@@ -1,7 +1,7 @@
 .home-main {
     @include flex (column, none, none, 150px);
     
-
+/*Inicio Carousel*/
     .carousel {
         height: 67.5vh;
 
@@ -32,6 +32,7 @@
         }
     }
 
+    /*Inicio Section Services*/
     .service {
         width: 90vw;
         display: grid;
@@ -68,25 +69,25 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 transition: all 0.2s ease-in-out;
-                /*mask-image: linear-gradient(0deg, rgba(205,205,205,1) 20%, rgba(230,230,230,1) 45%, rgba(255,255,255,0.01) 100%);
-                -webkit-mask-image: linear-gradient(0deg, rgba(205,205,205,1) 20%, rgba(230,230,230,1) 45%, rgba(255,255,255,0.01) 100%);*/
 
-                &:hover {
-                    transform: scale(1.05);
-                    box-shadow: 8px 10px 20px -1px rgba(0,0,0,0.60);
+                @include desktop{
+                    &:hover {
+                        transform: scale(1.05);
+                        box-shadow: 8px 10px 20px -1px rgba(0,0,0,0.60);
+                    }
+    
+                    &:hover .icon img{
+                        filter: invert(99%) sepia(69%) saturate(1529%) hue-rotate(330deg) brightness(250%) contrast(89%);
+                        width: 85px;
+                        height: 85px;      
+                    }
+    
+                    &:hover .icon h3{
+                        color: $primary-color;
+                        font-size: 1.8rem;
+                    }
                 }
-
-                &:hover .icon img{
-                    filter: invert(99%) sepia(69%) saturate(1529%) hue-rotate(330deg) brightness(250%) contrast(89%);
-                    width: 85px;
-                    height: 85px;      
-                }
-
-                &:hover .icon h3{
-                    color: $primary-color;
-                    font-size: 1.8rem;
-                }
-
+                
 
                 .icon {
                     position: absolute;
@@ -153,6 +154,7 @@
         } 
     }
     
+    /*Inicio Section Project*/
     .project {
         width: 90vw;
         margin: 0 auto;
@@ -255,7 +257,7 @@
             }
         }   
     }
-
+    /*Inicio Section Location*/
     .location {
         width: 100%;
         @include flex (column, center, center, 50px);

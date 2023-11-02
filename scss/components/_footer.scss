@@ -62,56 +62,59 @@ footer {
                     height: 100%;
                 }
 
-                .fa-facebook:hover {
-                    background-color: $facebook-color;
-                    box-shadow: 0 0 15px $facebook-color,
-                                0 0 45px $facebook-color,
-                                0 0 75px $facebook-color,
-                                0 0 115px $facebook-color;
-                    color: $light-color;
-                    transform: scale(1.2);
-                
+                @include desktop {
+                    .fa-facebook:hover {
+                        background-color: $facebook-color;
+                        box-shadow: 0 0 15px $facebook-color,
+                                    0 0 45px $facebook-color,
+                                    0 0 75px $facebook-color,
+                                    0 0 115px $facebook-color;
+                        color: $light-color;
+                        transform: scale(1.2);
+                    
+                    }
+                    
+                    .fa-twitter:hover {
+                        background-color: $twitter-color;
+                        box-shadow: 0 0 15px $twitter-color,
+                                    0 0 45px $twitter-color,
+                                    0 0 75px $twitter-color,
+                                    0 0 115px $twitter-color;
+                        color: $light-color;
+                        transform: scale(1.2);
+                    }
+                    
+                    .fa-instagram:hover {
+                        background: linear-gradient(45deg, nth($list: $instagram-color, $n:3) 0%, nth($list: $instagram-color, $n:5) 25%, nth($list: $instagram-color, $n:1) 50%, nth($list: $instagram-color, $n:4) 75%, nth($list: $instagram-color, $n:2) 100%);
+                        box-shadow: 0px 0 15px rgba(254, 218, 117, 0.8),
+                                    0px 0 45px rgba(250,126,30,0.8),
+                                    0px 0 75px rgba(214,41,118,0.8),
+                                    0px 0 115px rgba(150,47,191,0.8);
+                        color: $light-color;
+                        transform: scale(1.2);
+                    }
+                    
+                    .fa-linkedin:hover {
+                        background-color: $linkedin-color;
+                        box-shadow: 0 0 15px $linkedin-color,
+                                    0 0 45px $linkedin-color,
+                                    0 0 75px $linkedin-color,
+                                    0 0 115px $linkedin-color;
+                        color: $light-color;
+                        transform: scale(1.2);
+                    }
+                    
+                    .fa-youtube:hover {
+                        background-color: $youtube-color;
+                        box-shadow: 0 0 15px $youtube-color,
+                                    0 0 45px $youtube-color,
+                                    0 0 75px $youtube-color,
+                                    0 0 115px $youtube-color;
+                        color: $light-color;
+                        transform: scale(1.2);
+                    }            
                 }
                 
-                .fa-twitter:hover {
-                    background-color: $twitter-color;
-                    box-shadow: 0 0 15px $twitter-color,
-                                0 0 45px $twitter-color,
-                                0 0 75px $twitter-color,
-                                0 0 115px $twitter-color;
-                    color: $light-color;
-                    transform: scale(1.2);
-                }
-                
-                .fa-instagram:hover {
-                    background: linear-gradient(45deg, nth($list: $instagram-color, $n:3) 0%, nth($list: $instagram-color, $n:5) 25%, nth($list: $instagram-color, $n:1) 50%, nth($list: $instagram-color, $n:4) 75%, nth($list: $instagram-color, $n:2) 100%);
-                    box-shadow: 0px 0 15px rgba(254, 218, 117, 0.8),
-                                0px 0 45px rgba(250,126,30,0.8),
-                                0px 0 75px rgba(214,41,118,0.8),
-                                0px 0 115px rgba(150,47,191,0.8);
-                    color: $light-color;
-                    transform: scale(1.2);
-                }
-                
-                .fa-linkedin:hover {
-                    background-color: $linkedin-color;
-                    box-shadow: 0 0 15px $linkedin-color,
-                                0 0 45px $linkedin-color,
-                                0 0 75px $linkedin-color,
-                                0 0 115px $linkedin-color;
-                    color: $light-color;
-                    transform: scale(1.2);
-                }
-                
-                .fa-youtube:hover {
-                    background-color: $youtube-color;
-                    box-shadow: 0 0 15px $youtube-color,
-                                0 0 45px $youtube-color,
-                                0 0 75px $youtube-color,
-                                0 0 115px $youtube-color;
-                    color: $light-color;
-                    transform: scale(1.2);
-                }            
             }
         }
         
@@ -150,15 +153,18 @@ footer {
                     height: 100%;
                 }
 
-                .fa-whatsapp:hover {
-                    background-color: #25D366;
-                    box-shadow: 0 0 15px #25D366,
-                                0 0 45px #25D366,
-                                0 0 75px #25D366,
-                                0 0 115px #25D366;
-                    color: $light-color;
-                    transform: scale(1.2);
+                @include desktop {
+                    .fa-whatsapp:hover {
+                        background-color: #25D366;
+                        box-shadow: 0 0 15px #25D366,
+                                    0 0 45px #25D366,
+                                    0 0 75px #25D366,
+                                    0 0 115px #25D366;
+                        color: $light-color;
+                        transform: scale(1.2);
+                    }
                 }
+                
             }            
         }
     }

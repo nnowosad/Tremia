@@ -657,6 +657,44 @@ header .toogle .switch:checked:before {
   border-bottom: 0.2em solid #c7c7c7;
   border-top: 0.2em solid #c7c7c7;
 }
+@media screen and (min-width: 1024px) {
+  .about-main .about .about__card .left {
+    animation: zoomInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+  }
+}
+@keyframes zoomInLeft {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1500px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(100px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-main .about .about__card .right {
+    animation: zoomInRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+  }
+}
+@keyframes zoomInRight {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(1500px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-100px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
 
 /*Inicio Main Servicios*/
 .service-main {
@@ -926,6 +964,56 @@ header .toogle .switch:checked:before {
   font-weight: bold;
   text-align: center;
   margin-bottom: 0px;
+}
+@media screen and (min-width: 1024px) {
+  .partner-main .partner-container .partner-card .item2, .partner-main .partner-container .partner-card .item5 {
+    animation: zoomIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .partner-main .partner-container .partner-card .item1, .partner-main .partner-container .partner-card .item4 {
+    animation: fadeInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3) translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .partner-main .partner-container .partner-card .item3, .partner-main .partner-container .partner-card .item6 {
+    animation: fadeInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3) translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
 }
 
 /*Inicio Formulario*/

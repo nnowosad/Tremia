@@ -47,6 +47,7 @@
                 background-color: $light-color;
                 box-shadow: .7em .7em .3em 0em rgba(0,0,0,0.40);
 
+
                     .about-card__head {
                         @include flex (column, center, center, 0px);
                         padding: 2.5em 2em;
@@ -131,10 +132,55 @@
                             border-top: 0.2em solid #c7c7c7;
                         }
                     }
-                }   
-        }       
-    }
-}
+            }
+                
+                .left {
+                    @include desktop {
+                        animation: zoomInLeft;
+                        animation-duration: 3s;
+                        animation-timing-function: ease-in-out;
+                    }
+
+                    @keyframes zoomInLeft {
+                        0% {
+                            opacity: 0;
+                            transform: scale3d(.1,.1,.1) translate3d(-1500px,0px,0px);
+                            animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+                        }
+
+                        60% {
+                            opacity: 1;
+                            transform: scale3d(.475,.475,.475) translate3d(100px,0px,0px);
+                            animation-timing-function: cubic-bezier(.175,.885,.32,1);
+                        }
+                    }
+            }
+                .right {
+                    @include desktop {
+                        animation: zoomInRight;
+                        animation-duration: 3s;
+                        animation-timing-function: ease-in-out;
+                    }
+
+                    @keyframes zoomInRight {
+                        0% {
+                            opacity: 0;
+                            transform: scale3d(.1,.1,.1) translate3d(1500px,0px,0px);
+                            animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+                        }
+
+                        60% {
+                            opacity: 1;
+                            transform: scale3d(.475,.475,.475) translate3d(-100px,0px,0px);
+                            animation-timing-function: cubic-bezier(.175,.885,.32,1);
+                        }
+                    }
+            }
+        }
+    }    
+}       
+
+
 
 
 
